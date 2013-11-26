@@ -26,5 +26,15 @@
    <h2>ABOUT ME</h2>
    <hr>
    <p>COMP SCI STUDENT, INTERESTED IN LEARNING</p>
+   <h2>FUN</h2>
+   <hr>
+   <canvas id="cool" width="300" height="200"></canvas>
   </body>
+  <script>
+    function draw_canvas() {
+      var canvas = document.getElementById("cool");
+      var context = canvas.getContext("2d");
+      context.fill_rect(50, 25, 150, 100);
+    }
+  </script>
 </html>
