@@ -6,6 +6,7 @@
     <title>ryan williams</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
+    <link rel="stylesheet" href="style.css">
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -16,40 +17,49 @@
 
   </head>
   <body>
-   <h1>RYAN WILLIAMS</h1>
-   <hr>
-   <ul>
-     <li><a href="http://www.github.com/ryancw">GITHUB</a></li>
-     <li><a href="http://gist.github.com/ryancw">GISTS</a></li>
-   </ul>
-   
-   <h2>ABOUT ME</h2>
-   <hr>
-   <p>COMP SCI STUDENT, INTERESTED IN LEARNING</p>
-   <h2>FUN</h2>
-   <hr>
-   <canvas id="cool" width="300" height="200"></canvas>
-   <script src="http://coinwidget.com/widget/coin.js"></script>
-<script>
-CoinWidgetCom.go({
-	wallet_address: "1PV1KCkDQtwK6LWQ2hEnTie4MHjry2fuos"
-	, currency: "bitcoin"
-	, counter: "hide"
-	, alignment: "bl"
-	, qrcode: true
-	, auto_show: false
-	, lbl_button: "Donate"
-	, lbl_address: "My Bitcoin Address:"
-	, lbl_count: "donations"
-	, lbl_amount: "BTC"
-});
-</script>
+    <div id="main">
+      <div class="title_card">
+       <h1>Ryan Williams</h1>
+
+       <ul>
+         <li><a href="http://www.github.com/ryancw">Github</a></li>
+         <li><a href="http://gist.github.com/ryancw">Gists</a></li>
+         <li>ryanw@ccs.neu.edu</li>
+       </ul>
+      </div>
+      <div class="quote">
+        <i>"Loading..."</i> - Anonymous
+      </div>
+     <h2>About</h2>
+     <p>Student, interested in learning.</p>
+     <img src="images/atwork89.gif"></img>
+     <script src="http://coinwidget.com/widget/coin.js"></script>
+      <script>
+      CoinWidgetCom.go({
+      	wallet_address: "1PV1KCkDQtwK6LWQ2hEnTie4MHjry2fuos"
+      	, currency: "bitcoin"
+      	, counter: "hide"
+      	, alignment: "bl"
+      	, qrcode: true
+      	, auto_show: false
+      	, lbl_button: "Donate"
+      	, lbl_address: "My Bitcoin Address:"
+      	, lbl_count: "donations"
+      	, lbl_amount: "BTC"
+      });
+      </script>
+      <h2>Education</h2>
+      <ul>
+        <li><b>B.S. Computer Science</b>, Northeastern University, Boston, 2015.</li>
+        <li><b>B.S. Music with Concentration in Music Composition and Technology</b>, Northeastern University, Boston, 2015.</li>
+        <li><b>B.A. Life Studies</b>, School of Hard Knocks, New Haven, 2006.</li>
+      </ul>
+</div>
   </body>
   <script>
-    function draw_canvas() {
-      var canvas = document.getElementById("cool");
-      var context = canvas.getContext("2d");
-      context.fill_rect(50, 25, 150, 100);
-    }
+      window.setInterval(function(){
+      document.body.innerHTML = document.body.innerHTML.replace('Loading...', 'This is my website.');
+    }, 5000);
+
   </script>
 </html>

@@ -1,0 +1,25 @@
+body {
+  background-image: url('images/bg_img.jpg');
+}
+
+#main {
+  margin: 0px auto;
+  padding: 10px;
+  width: 600px;
+  background-color: rgba(255,255,255,0.75);
+}
+
+.title_card {
+  text-align: right;
+  float: right;
+  width: 300px;
+}
+
+.title_card ul li {
+  list-style: none;
+}
+
+.quote {
+  margin-top: 75px;
+  height: 150px;
+}
