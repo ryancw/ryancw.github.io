@@ -35,8 +35,8 @@
        </ul>
       </div>
       <div class="quote">
-        <i>"Loading..."</i> - Anonymous
-      </div>
+     	<img src="images/me.jpg"></img> 
+     </div>
      <h2>About</h2>
      <p>Student, interested in learning.</p>
      <img src="images/atwork89.gif"></img>
@@ -49,9 +49,15 @@
 </div>
   </body>
   <script>
-      window.setInterval(function(){
-      document.body.innerHTML = document.body.innerHTML.replace('Loading...', 'This is my website.');
-    }, 5000);
-   $('body').css('background-image', 'url(images/bg/IMG_1602.jpg)');
+      //window.setInterval(function(){
+      //document.body.innerHTML = document.body.innerHTML.replace('Loading...', 'This is my website.');
+    //}, 5000);
+   var bgs = ['IMG_1602.jpg', 'IMG_1485.jpg', 'IMG_1611.jpg', 'IMG_1580.jpg', 'IMG_1592.jpg', 'IMG_1704.jpg', 'IMG_1697.jpg']
+   $('body').css('background', function() {
+	var path = 'images/bg/';
+	i = Math.floor(Math.random()*bgs.length);
+	var url = (path+bgs[i]);
+	return 'url(' + url + ') no-repeat center center fixed';
+	});
   </script>
 </html>
